@@ -20,7 +20,7 @@ module.exports = {
       { text: 'Contact', 
         icon: 'reco-message',
         items: [
-          { text: 'Gitee', link: 'https://gitee.com/yuangegena/dashboard/projects', icon: 'reco-github' }
+          { text: 'Gitee', link: 'https://gitee.com/yuangegena/dashboard/projects', icon: 'reco-mayun' }
         ]
       }
     ],
