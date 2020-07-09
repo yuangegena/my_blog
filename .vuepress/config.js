@@ -2,6 +2,7 @@ module.exports = {
   title: "yuangegena_blog",
   description: 'welcome to my blog',
   dest: 'public',
+  base:'/my_blog/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
