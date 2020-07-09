@@ -10,14 +10,14 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
-      { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      { text: 'Docs', 
+      { text: '时间线', link: '/timeline/', icon: 'reco-date' },
+      { text: '文档', 
         icon: 'reco-message',
         items: [
           { text: 'vuepress-reco', link: '/docs/theme-reco/' }
         ]
       },
-      { text: 'Contact', 
+      { text: '联系', 
         icon: 'reco-message',
         items: [
           { text: 'Gitee', link: 'https://gitee.com/yuangegena/dashboard/projects', icon: 'reco-mayun' }
@@ -37,11 +37,11 @@ module.exports = {
     blogConfig: {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认 “分类”
+        text: '分类' // 默认 “分类”
       },
       tag: {
         location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: 'Tag' // 默认 “标签”
+        text: '标签' // 默认 “标签”
       }
     },
     friendLink: [
@@ -65,7 +65,7 @@ module.exports = {
     // 自动形成侧边导航
     // sidebar: 'auto',
     // 最后更新时间
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最后更新时间',
     // 作者
     author: 'yuangegena',
     // 作者头像
@@ -73,7 +73,16 @@ module.exports = {
     // 备案号
     // record: 'xxxx',
     // 项目开始时间
-    startYear: '2020'
+    startYear: '2020',
+    // 插件
+    // 插件
+    plugins: [
+      ['flowchart'],  // 支持流程图
+      ['vuepress-plugin-smooth-scroll'],  // 平滑滚动
+      ['@vuepress/nprogress'],  // 加载进度条
+      ['reading-progress']  // 阅读进度条
+    ],
+
     /**
      * 密钥 (if your blog is private)
      */
