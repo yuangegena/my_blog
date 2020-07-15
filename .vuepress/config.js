@@ -15,7 +15,7 @@ module.exports = {
       { text: '文档', 
         icon: 'reco-message',
         items: [
-          { text: 'vuepress-reco', link: '/docs/theme-reco/' }
+          { text: '相关文档', link: '/docs/theme-reco/' }
         ]
       },
       { text: '联系', 
@@ -37,7 +37,7 @@ module.exports = {
     // 博客设置
     blogConfig: {
       category: {
-        location: 2, // 在导航栏菜单中所占的位置，默认2
+        location: 3, // 在导航栏菜单中所占的位置，默认2
         text: '分类' // 默认 “分类”
       },
       tag: {
@@ -47,16 +47,16 @@ module.exports = {
     },
     friendLink: [
       {
-        title: '码云',
-        desc: '欢迎关注码云',
+        title: 'Gitee',
+        desc: '欢迎关注Gitee',
         email: 'yuangegena@163.com',
         link: 'https://gitee.com/yuangegena/dashboard/projects'
       },
       {
-        title: 'github',
+        title: 'Github',
         desc: '欢迎关注github',
         email: 'yuangegena@163.com',
-        link: 'https://gitee.com/yuangegena/dashboard/projects'
+        link: 'https://github.com/yuangegena'
       },
     ],
     logo: '/logo.png',
