@@ -74,14 +74,14 @@ module.exports = {
     // 备案号
     // record: 'xxxx',
     // 项目开始时间
-    startYear: '2020',
+    startYear: '2019',
     // 插件
     // 插件
     plugins: [
       ['flowchart'],  // 支持流程图
       ['vuepress-plugin-smooth-scroll'],  // 平滑滚动
       ['@vuepress/nprogress'],  // 加载进度条
-      ['reading-progress']  // 阅读进度条
+      ['reading-progress'],  // 阅读进度条
     ],
 
     /**
@@ -103,7 +103,54 @@ module.exports = {
     //   appKey: '...', // your appKey
     // }
   },
+  plugins:[
+    [ // 播放音乐插件
+      '@vuepress-reco/vuepress-plugin-bgm-player',
+      {
+        audios: [
+          // 配置背景音乐
+          {
+            name: 'You',
+            artist: 'Approaching Nirvana',
+            url: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/Approaching%20Nirvana%20-%20You.mp3',
+            cover: '/avatar.png'
+          },
+          {
+            name: 'ride it',
+            artist: 'Regard',
+            url: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/Regard%2CJay%20Sean%20-%20Ride%C2%A0It%C2%A0%28Regard%C2%A0Remix%29.mp3',
+            cover: '/avatar.png'
+          },
+          {
+            name: '杀死那个石家庄人',
+            artist: '夜难熬吗',
+            url: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/ssngsjzr.mp3',
+            cover: '/avatar.png'
+          },
+          {
+            name: 'Anesthesia',
+            artist: 'Vexento',
+            url: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/Anesthesia.mp3',
+            cover: '/avatar.png'
+          }
+        ],
+        autoplay:true
+      }
+    ],
+    [ // 展示公告插件
+      '@vuepress-yard/vuepress-plugin-window',
+      {
+        title:'公告',
+        windowStyle:{right: '20px',top: '70px',width: '260px',},
+        contentInfo:{title: '欢迎添加QQ:1468246639 🎉🎉🎉',imgUrl: '/avatar.png',needImg: true,content: '', contentStyle: {}},
+        bottomInfo:{btnText: '赞赏',linkTo: '/my_blog/person_pages/donate_page/donate.html'},
+        delayMount:500,
+        closeOnce:false,
+        hideRouteList:[]
+      }
+    ], 
+  ],
   markdown: {
     lineNumbers: true
   }
-}  
+}

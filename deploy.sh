@@ -20,4 +20,8 @@ git commit -m '构建部分文档'
 # 部署github https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:yuangegena/my_blog.git master:gh-pages
 
+# 部署在码云
+#git push -f https://gitee.com/yuangegena/my_blog.git master:gh-pages
+
+
 cd -
