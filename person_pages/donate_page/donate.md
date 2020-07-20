@@ -10,4 +10,4 @@ date: 2020-07-20
 
 | Wechat        | AliPay           |
 | ------------- |:-------------:|
-| ![](/wechat.png) | ![](/alipay.png) |
+| <img :src="$withBase('/wechat.png')" alt="foo"> | <img :src="$withBase('/alipay.png')" alt="foo"> |
