@@ -15,7 +15,8 @@ module.exports = {
       { text: '文档', 
         icon: 'reco-message',
         items: [
-          { text: '相关文档', link: '/docs/theme-reco/' }
+          { text: '相关文档', link: '/docs/theme-reco/' },
+          { text: 'vue-admin', link: '/docs/vue-admin/' },
         ]
       },
       { text: '联系', 
@@ -28,9 +29,13 @@ module.exports = {
     sidebar: {
       '/docs/theme-reco/': [
         '',
-        'theme',
-        'plugin',
-        'api'
+        'theme-use',
+        'plugin-use',
+        'api-use',
+      ],
+      '/docs/vue-admin/': [
+        '',
+        'vue-admin-tem',
       ]
     },  
     type: 'blog',
@@ -110,28 +115,28 @@ module.exports = {
         audios: [
           // 配置背景音乐
           {
+            name: 'ride it',
+            artist: 'Regard',
+            url: 'https://ty-1256774756.cos.ap-chengdu.myqcloud.com/blog/Regard%2CJay%20Sean%20-%20Ride%C2%A0It%C2%A0(Regard%C2%A0Remix).mp3',
+            cover: 'https://ty-1256774756.cos.ap-chengdu.myqcloud.com/blog/avatar.png'
+          },
+          {
             name: 'You',
             artist: 'Approaching Nirvana',
             url: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/Approaching%20Nirvana%20-%20You.mp3',
-            cover: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/avatar.png'
-          },
-          {
-            name: 'ride it',
-            artist: 'Regard',
-            url: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/Regard%2CJay%20Sean%20-%20Ride%C2%A0It%C2%A0%28Regard%C2%A0Remix%29.mp3',
-            cover: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/avatar.png'
+            cover: 'https://ty-1256774756.cos.ap-chengdu.myqcloud.com/blog/avatar.png'
           },
           {
             name: '杀死那个石家庄人',
             artist: '夜难熬吗',
-            url: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/ssngsjzr.mp3',
-            cover: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/avatar.png'
+            url: 'https://ty-1256774756.cos.ap-chengdu.myqcloud.com/blog/ssngsjzr.mp3',
+            cover: 'https://ty-1256774756.cos.ap-chengdu.myqcloud.com/blog/avatar.png'
           },
           {
             name: 'Anesthesia',
             artist: 'Vexento',
-            url: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/Anesthesia.mp3',
-            cover: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/avatar.png'
+            url: 'https://ty-1256774756.cos.ap-chengdu.myqcloud.com/blog/Anesthesia.mp3',
+            cover: 'https://ty-1256774756.cos.ap-chengdu.myqcloud.com/blog/avatar.png'
           }
         ],
         autoplay:true
@@ -142,13 +147,22 @@ module.exports = {
       {
         title:'公告',
         windowStyle:{right: '20px',top: '70px',width: '260px',},
-        contentInfo:{title: '欢迎添加QQ:1468246639 🎉🎉🎉',imgUrl: 'https://91buy.oss-cn-shenzhen.aliyuncs.com/wx_mini_program/dragon_activity/avatar.png',needImg: true,content: '', contentStyle: {}},
+        contentInfo:{title: '欢迎添加QQ:1468246639 🎉🎉🎉',imgUrl: 'https://ty-1256774756.cos.ap-chengdu.myqcloud.com/blog/avatar.png',needImg: true,content: '', contentStyle: {}},
         bottomInfo:{btnText: '赞赏',linkTo: '/my_blog/person_pages/donate_page/donate.html'},
         delayMount:500,
         closeOnce:false,
         hideRouteList:[]
       }
-    ], 
+    ],
+    // 代码复制弹窗插件
+    ["vuepress-plugin-nuggets-style-copy", {
+      copyText: "复制代码",
+      tip: {
+          content: "复制成功!"
+      }
+    }], 
+    // 添加名人名言
+    ["vuepress-plugin-boxx"]
   ],
   markdown: {
     lineNumbers: true

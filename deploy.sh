@@ -12,7 +12,7 @@ cd public
 
 git init
 git add -A
-git commit -m '增加背景音乐模块，增加公告模块'
+git commit -m '修改路径'
 
 # 部署github https://<USERNAME>.github.io
 #  git push -f git@github.com:yuangegena/yuangegena.github.io.git master
@@ -21,7 +21,7 @@ git commit -m '增加背景音乐模块，增加公告模块'
 git push -f git@github.com:yuangegena/my_blog.git master:gh-pages
 
 # 部署在码云
-#git push -f https://gitee.com/yuangegena/my_blog.git master:gh-pages
+# git push -f https://gitee.com/yuangegena/my_blog.git master:gh-pages
 
 
 cd -
