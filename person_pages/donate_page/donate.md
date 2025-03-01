@@ -8,8 +8,7 @@ categories:
 ---
 
 ::: tip
-感谢你那么帅（美）！还来看看！！！
-如果你觉得博客内容还不错，可以为博主贡献一杯奶茶。
+HELLO WORLD!
 :::
 
 | Wechat        | AliPay        |

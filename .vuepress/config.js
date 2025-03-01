@@ -1,14 +1,16 @@
 module.exports = {
-  title: "yuangegena_blog",
-  description: 'welcome to my blog',
+  title: "YuanTouo",
+  description: 'hello world',
   dest: 'public',
-  base:'/my_blog/',
+  base:'/blog/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
   themeConfig: {
+    record: '蜀ICP备19041416号',
+    recordLink: 'https://beian.mps.gov.cn/#/query/webSearch',
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '时间线', link: '/timeline/', icon: 'reco-date' },
@@ -73,7 +75,7 @@ module.exports = {
     // 最后更新时间
     lastUpdated: '最后更新时间',
     // 作者
-    author: 'yuangegena',
+    author: 'YuanTouo',
     // 作者头像
     authorAvatar: '/avatar.png',
     // 备案号

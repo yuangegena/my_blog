@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: yuangegena
-tagline: Welcome to my blog
+heroText: YuanTouo
+tagline: Hello World
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
